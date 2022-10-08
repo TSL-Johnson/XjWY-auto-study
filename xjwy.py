@@ -122,7 +122,7 @@ if __name__=='__main__':
     chrome_option = Options()
     chrome_option.add_argument('--headless')
     chrome_option.add_argument('--disable-gpu')
-    driver_url = r"D:\Bin\chromedriver.exe"
+    #driver_url = r"D:\Bin\chromedriver.exe"
     web = webdriver.Chrome(executable_path=driver_url,chrome_options=chrome_option)
     wait = WebDriverWait(web, 10)
     user = input("请输入用户名：")
