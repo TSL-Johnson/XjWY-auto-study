@@ -15,8 +15,8 @@ from selenium.webdriver.chrome.options import Options
 def login(user,passwd):
     web.get('https://www.xjgbzx.cn/student/student!index.action?menu=2')
     time.sleep(1)
-    web.find_element(By.XPATH,'//*[@id="name"]').send_keys("user")
-    web.find_element(By.XPATH,'//*[@id="password"]').send_keys("passwd")
+    web.find_element(By.XPATH,'//*[@id="name"]').send_keys(user)
+    web.find_element(By.XPATH,'//*[@id="password"]').send_keys(passwd)
     ocr = ddddocr.DdddOcr()
     img = web.find_element(By.ID,'codeImg1')
     vcode = img.screenshot("test.png") 
@@ -122,8 +122,7 @@ if __name__=='__main__':
     chrome_option = Options()
     chrome_option.add_argument('--headless')
     chrome_option.add_argument('--disable-gpu')
-    #driver_url = r"D:\Bin\chromedriver.exe"
-    web = webdriver.Chrome(executable_path=driver_url,chrome_options=chrome_option)
+    web = webdriver.Chrome(chrome_options=chrome_option)
     wait = WebDriverWait(web, 10)
     user = input("请输入用户名：")
     passwd = input("请输入密码：")
