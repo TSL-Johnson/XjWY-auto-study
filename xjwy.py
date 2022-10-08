@@ -89,7 +89,7 @@ def study():
                 预计学习：{waitminute}分钟
                 现在时间：{now}
                 """
-                api = "https://sctapi.ftqq.com/SCT2780TvCwyvV0Vq6V2MQjVdfkm90Of.send" #填入你的api，如果是普通版的前面的域名可能会不一样
+                api = "https://sctapi.ftqq.com/***************************.send" #填入你的api，如果是普通版的前面的域名可能会不一样
                 data = {
                         'text':receiver, #标题
                         'desp':text} #内容
