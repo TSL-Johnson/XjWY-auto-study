@@ -82,13 +82,7 @@ def study():
                 print("现在时间%s"%now)
                 receiver = ("XJ网院学习通知")
                 print(receiver)
-                text = f"""
-                年度总学分：{zongxuefen}分(必修{bixiu}分)
-                已获得学分：{yihuo}分
-                正在学习：{kecheng} 学习进度：{learn1}
-                预计学习：{waitminute}分钟
-                现在时间：{now}
-                """
+                text = f"年度总学分：{zongxuefen}分(必修{bixiu}分)\n已获得学分：{yihuo}分\n正在学习：{kecheng} 学习进度：{learn1}\n预计学习：{waitminute}分钟\n现在时间：{now}"
                 api = "https://sctapi.ftqq.com/SCT2780TvCwyvV0Vq6V2MQjVdfkm90Of.send" #填入你的api，如果是普通版的前面的域名可能会不一样
                 data = {
                         'text':receiver, #标题
