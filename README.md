@@ -2,8 +2,8 @@
 XJ网院自动学习
 
 技术路线
-selenum加chrome headless学习
-
+selenum加chrome headless学习8
+http://192.168.5.11
 
 见谅
 学习之作，资源开销较大，敬请谅解
